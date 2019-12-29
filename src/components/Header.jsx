@@ -1,11 +1,11 @@
 import React from 'react';
-import { Navbar, Nav,Image} from 'react-bootstrap';
+import { Navbar, Nav,Image, ButtonToolbar, Button} from 'react-bootstrap';
 import logo from '../asset/logo/logo.png';
 
 export default function Header() {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" text="dark">
+      <Navbar collapseOnSelect expand="lg" text="dark" className="border-bottom" style={{background:'white'}}>
         <Navbar.Brand href="#home"><Image src={logo} style={{width:'200px', height:'auto'}} responsive /></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -25,8 +25,11 @@ export default function Header() {
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
+              <ButtonToolbar className="mx-lg-3" style={{paddingTop:'4px'}}>
+                <Button variant="outline-primary">Sign Up</Button>
+              </ButtonToolbar>
             </Navbar.Collapse>
-      </Navbar>
+        </Navbar>    
     </div>
   )
 }
