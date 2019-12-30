@@ -5,14 +5,13 @@ import Billingform from './Billingform';
 import Cart from './Cart';
 import Pricing from './Pricing';
 
-
 function Body() {
   return (
     <div>
       <Container>
         <Row>
           <Col md={12}>
-          <Image src={logo} style={{width:'350px', height:'auto'}} className="mx-auto d-block img-fluid" responsive/>
+          <Image src={logo} style={{width:'200px', height:'auto'}} className="mx-auto d-block img-fluid" responsive/>
             <h2 className="text-center">Checkout From</h2>
             <p className="text-center py-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
           </Col>
@@ -25,19 +24,17 @@ function Body() {
             <Cart/>
           </Col>
         </Row>
-        <Container className="pricing">
-          <Row className="py-5">
-            <Col md={12}>
-              <h2 className="text-center">Pricing</h2>
-              <p className="text-center py-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12}>
-              <Pricing/>
-            </Col>
-          </Row>
-        </Container>
+        <Row className="py-5 border-top">
+          <Col md={12}>
+            <h2 className="text-center">Pricing</h2>
+            <p className="text-center py-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          </Col>
+        </Row>
+        <Row className="border-bottom py-5">
+          <Col md={12}>
+            <Pricing/>
+          </Col>
+        </Row>
       </Container>
     </div>
   )
